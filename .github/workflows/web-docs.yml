@@ -11,14 +11,24 @@ jobs:
     runs-on: ubuntu-22.04
     environment: github-pages
     steps:
+      - name: Install Latex
+        shell: bash
+        run: |
+          apt install texlive-full
+
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-      - name: Install 
+      - name: Install packages
         shell: bash
         run: |
           pip install --user -r dockers/requirements.txt
           sphinx-build -b html source build
+
+      - name: Make PDF
+        shell: bash
+        run: |
+          make latexpdf
 
       - name: Deploy Website
         uses: peaceiris/actions-gh-pages@v3
