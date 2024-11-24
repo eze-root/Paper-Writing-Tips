@@ -11,6 +11,7 @@ Welcome to Paper-Writing-Tips-For-EZE's
    :caption: Contents:
 
    mds/chap0.md
+   mds/checklist
 
 
 
