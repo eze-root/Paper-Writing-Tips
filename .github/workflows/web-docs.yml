@@ -14,7 +14,7 @@ jobs:
       - name: Install Latex
         shell: bash
         run: |
-          apt install texlive-full
+          sudo apt install texlive-full
 
       - name: Checkout Repo
         uses: actions/checkout@v3
