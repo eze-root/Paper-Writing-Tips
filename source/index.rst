@@ -7,7 +7,7 @@ Welcome to Paper-Writing-Tips-For-EZE's
 =======================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    mds/chap0.md

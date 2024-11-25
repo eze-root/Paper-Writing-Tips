@@ -19,16 +19,19 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
+      - name: Make PDF
+        shell: bash
+        run: |
+          make latexpdf
+          cp build/latex/*.pdf source/_static/
+          rm -rf build/latex
+
       - name: Install packages
         shell: bash
         run: |
           pip install --user -r dockers/requirements.txt
           sphinx-build -b html source build
 
-      - name: Make PDF
-        shell: bash
-        run: |
-          make latexpdf
 
       - name: Deploy Website
         uses: peaceiris/actions-gh-pages@v3

@@ -57,6 +57,16 @@ html_theme = 'shibuya'
 html_static_path = ['_static']
 
 
+# https://shibuya.lepture.com/customisation/sidebar/
+html_context = {
+    "source_type": "github",
+    "source_user": "eze-root",
+    "source_repo": "Paper-Writing-Tips",
+    "source_version": "main",  # Optional
+    "source_docs_path": "/docs/",  # Optional
+}
+
+
 
 
 latex_engine = 'xelatex'
