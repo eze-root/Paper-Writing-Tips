@@ -1,6 +1,6 @@
 # 投稿前检查清单
 
-[PDFS](./_static/checklist-1.pdf){.external}
+[PDFS](../_static/checklist-1.pdf){.external}
 
 
 姓名: __________________________
