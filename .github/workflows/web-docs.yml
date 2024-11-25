@@ -19,6 +19,11 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
+      - name: Install packages
+        shell: bash
+        run: |
+          pip install --user -r dockers/requirements.txt
+
       - name: Make PDF
         shell: bash
         run: |
@@ -26,12 +31,10 @@ jobs:
           cp build/latex/*.pdf source/_static/
           rm -rf build/latex
 
-      - name: Install packages
+      - name: Make Html
         shell: bash
         run: |
-          pip install --user -r dockers/requirements.txt
           sphinx-build -b html source build
-
 
       - name: Deploy Website
         uses: peaceiris/actions-gh-pages@v3
