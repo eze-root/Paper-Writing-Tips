@@ -30,3 +30,4 @@ know how these will be addressed?
 - [ ] Do you and your advisor have an agreed method for working together, with a defined schedule of meetings?
 
 ## Reading and Reviewing
+
