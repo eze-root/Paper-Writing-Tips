@@ -35,6 +35,19 @@ jobs:
         shell: bash
         run: |
           sphinx-build -b html source build
+      
+      - name: Install fonts
+        shell: bash
+        run: |
+          git clone 
+
+      - name: Clone fonts repository
+        run: git clone https://github.com/touying-typ/fonts.git fonts --depth=1
+
+      - name: Build HTML File
+        run: |
+          cd typsts
+          touying compile main.typ --output build/index.html --format html --font-paths fonts
 
       - name: Deploy Website
         uses: peaceiris/actions-gh-pages@v3
