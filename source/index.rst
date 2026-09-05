@@ -12,6 +12,8 @@ Paper Writing Tips for EZE-Lab
 
    mds/chap0.md
    mds/checklist
+   mds/slides.md
+   mds/writing4cs.md
 
 
 
