@@ -39,7 +39,6 @@ jobs:
         uses: typst-community/setup-typst@v5
         with:
           typst-version: "0.15.1"
-          cache-dependency-path: typsts/main.typ
 
       - name: Install documentation dependencies
         run: |
